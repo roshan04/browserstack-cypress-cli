@@ -1120,6 +1120,11 @@ exports.formatRequest = (err, resp, body) => {
   }
 }
 
+exports.setCLIMode = (bsConfig, args) => {
+  let value = false;
+  
+}
+
 exports.setDebugMode = (args) => {
   if(args.cliDebug || String(process.env.DEBUG).toLowerCase() === 'true'){
     args.cliDebug ? 

@@ -111,6 +111,8 @@ module.exports = function run(args, rawArgs) {
     // set sync/async mode (--async/--sync)
     utils.setCLIMode(bsConfig, args);
 
+    utils.setNetworkLog(bsConfig, args);
+
     // set other cypress configs e.g. reporter and reporter-options
     utils.setOtherConfigs(bsConfig, args);
     markBlockEnd('setConfig');
